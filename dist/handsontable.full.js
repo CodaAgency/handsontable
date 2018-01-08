@@ -24,7 +24,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * 
  * Version: 0.35.0
- * Release date: 06/12/2017 (built at 06/12/2017 09:46:04)
+ * Release date: 06/12/2017 (built at 08/01/2018 13:24:24)
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -23863,8 +23863,9 @@ function Event(instance) {
     clearTimeout(longTouchTimeout);
     // that.instance.longTouch == void 0;
 
-    event.preventDefault();
+    //event.preventDefault();
     onMouseUp(event);
+    return true;
 
     // eventManager.removeEventListener(that.instance.wtTable.holder, "mouseup", onMouseUp);
   };
@@ -32890,7 +32891,7 @@ Handsontable.DefaultSettings = _defaultSettings2.default;
 Handsontable.EventManager = _eventManager2.default;
 Handsontable._getListenersCounter = _eventManager.getListenersCounter; // For MemoryLeak tests
 
-Handsontable.buildDate = '06/12/2017 09:46:04';
+Handsontable.buildDate = '08/01/2018 13:24:24';
 Handsontable.packageName = 'handsontable';
 Handsontable.version = '0.35.0';
 

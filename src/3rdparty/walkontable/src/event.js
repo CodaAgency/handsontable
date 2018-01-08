@@ -145,8 +145,9 @@ function Event(instance) {
     clearTimeout(longTouchTimeout);
     // that.instance.longTouch == void 0;
 
-    event.preventDefault();
+    //event.preventDefault();
     onMouseUp(event);
+    return true;
 
     // eventManager.removeEventListener(that.instance.wtTable.holder, "mouseup", onMouseUp);
   };
